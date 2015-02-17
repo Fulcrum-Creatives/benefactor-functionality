@@ -1,0 +1,17 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+.acf-field.slide-type select {
+	max-width: 300px;
+}
+.acf-field.one-half input,
+.acf-field.one-half select{
+	max-width: 300px;
+}
+.acf-field.small-field .acf-input .acf-input-wrap input {
+	width: 15%;
+}
+.column-featured {
+	width: 10%;
+}

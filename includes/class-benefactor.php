@@ -204,6 +204,11 @@ class Benefactor {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-benefactor-childpage-widget.php';
 
+		/**
+		 * The class responsible for creating the Resources Widget
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-benefactor-resources-widget.php';
+
 		$this->loader = new Benefactor_Loader();
 
 	}
@@ -276,7 +281,7 @@ class Benefactor {
 		 * Register custom post types
 		 */
 		$register_slider_post_type = new Benefactor_Register_Post_Type('Slider');
-		$register_clients_post_type = new Benefactor_Register_Post_Type('Clients', '', array(), array('supports' => array( 'title', 'editor', 'thumbnail' )));
+		$register_clients_post_type = new Benefactor_Register_Post_Type('Clients', '', array(), array('supports' => array( 'title', 'editor', 'thumbnail', 'excerpt')));
 		$register_partners_post_type = new Benefactor_Register_Post_Type('Partners');
 		$register_case_study_tax = new Benefactor_Register_Taxonomies( 'clients', 'Client Categories' );
 		$register_tasks_tax = new Benefactor_Register_Taxonomies( 'clients', 'Tasks' );

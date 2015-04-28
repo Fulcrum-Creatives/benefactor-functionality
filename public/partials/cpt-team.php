@@ -88,7 +88,7 @@ add_action( 'init', 'register_team_cpt' );
 
 /* Profile Order Meta Box
 ===============================================================================*/
-function team_member_profile_order_meta_box(){
+/*function team_member_profile_order_meta_box(){
 	add_meta_box( 
 		'team_member-info', 
 		'Profile Order', 
@@ -198,5 +198,5 @@ function sortable_columns() {
     'date' => 'date'
   );
 }
-add_filter( "manage_edit-team_member_sortable_columns", "sortable_columns" );
+add_filter( "manage_edit-team_member_sortable_columns", "sortable_columns" );*/
 ?>

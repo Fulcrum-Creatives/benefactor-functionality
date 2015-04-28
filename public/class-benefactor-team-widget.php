@@ -47,8 +47,8 @@ class Benefactor_Team_Widget extends WP_Widget {
 					    'post_type'         =>'team_member',
 					    'posts_per_page'   	=> -1,
 					    'order'				=> 'asc',
-					    'meta_key'			=> 'profile_order',
-					    'orderby'			=> 'meta_value',
+					    /*'meta_key'			=> 'profile_order',
+					    'orderby'			=> 'meta_value',*/
 					    'post__not_in'      => $do_not_duplicate
 
 					));

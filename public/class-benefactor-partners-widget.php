@@ -31,7 +31,7 @@ class Benefactor_Partners_Widget extends WP_Widget {
 		echo $args['before_widget'];
 		$title = $instance['title'];
 		$text = $instance['text'];
-		$partner_link = ( get_field( 'partner_link', 'option' ) ? get_field( 'partner_link', 'option' ) : '' );
+		
 		echo '<div class="partners-widget">
 				<h2 class="widgettitle">' . $title . '</h2>
 				<div class="widget-content">' . $text . '</div>
@@ -41,6 +41,7 @@ class Benefactor_Partners_Widget extends WP_Widget {
 					    'posts_per_page'   	=> -1,
 					));
 		while ($partnersw_query->have_posts()) : $partnersw_query->the_post();
+		$partner_link = ( get_field( 'partner_link' ) ? get_field( 'partner_link' ) : '' );
 		echo '<li><a href="' . $partner_link . '">';
 		the_title();
 		echo '</a></li>';
